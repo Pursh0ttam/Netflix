@@ -1,13 +1,105 @@
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #d2dbdd;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media(max-width:741){
+  .card{
+    max-width: 1000px;
+    display: block;
+    margin: 10px;
+  }
+}
+
+body{
+  overflow-x:hidden;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+    
+}
+
+.heading_style{
+
+  padding-top:10px;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Raleway",sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background-color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  margin-left: 5rem;
+}
+
+.card{
+  margin: 6%;
+  display: block;
+  transition: all 0.4s cubic-bezier(0.175,0.885,0,1);
+  background-color: #fff;
+  width: 21.25%;
+  border-radius: 12px;
+  box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.5);
+  float: left;
+}
+.cards:hover{
+  box-shadow: 0px 30px 18px -8px rgba(0,0,0,0);
+  transform: scale(1.05,1.05);
+}
+
+.card_img{
+  height: 235px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* padding: 15px 24px 24px 24px; */
+  /* background-color: #fff; */
+}
+
+.card_info{
+  background-color: #fff;
+  border-bottom-right-radius:12px ;
+  border-bottom-left-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.span_category{
+  font-family: "Raleway",sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #868686;
+  background-color: #fff;
+  /* position: center; */
+
+}
+
+.card_title{
+  font-family: "Raleway",sans-serif;
+  background-color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+button{
+  font-family: "Raleway",sans-serif;
+  background-color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  outline: none;
+  color: #868686;
+  padding: 5px 8px;
+  border: 1px solid black;
+  cursor: pointer;
 }
