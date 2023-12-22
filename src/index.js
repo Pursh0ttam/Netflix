@@ -12,7 +12,7 @@ import Sdata from './Sdata';
 
 ReactDom.render(
   <>
-  <h1>Top 5 Netflix web series </h1>
+  <h1>Top 10 Netflix web series </h1>
 
   <Card
   imgsrc={Sdata[0].imgsrc}
